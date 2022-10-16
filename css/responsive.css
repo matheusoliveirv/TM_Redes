@@ -14,6 +14,11 @@
 }
 
 @media (max-width: 767.98px){
+    #carouselExampleCaptions .item--1,
+    #carouselExampleCaptions .item--2,
+    #carouselExampleCaptions .item--3{
+        height: 50vh;
+    }
     #servicos a.destaque .img-container{
         height: 120px;
     }

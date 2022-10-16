@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
     
     //Realizar a fixação do header
     window.onscroll = function() {
-        if(window.pageYOffset > 90){
+        if(window.pageYOffset > 250){
             $('#header').addClass("active");
         }
         else{

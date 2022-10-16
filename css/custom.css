@@ -1,17 +1,19 @@
 body,
 html{
     font-family: 'Roboto', sans-serif;
+    scroll-padding-top: 120px;
 }
 #header{
+    position: absolute;
     width: 100%;
-    background-color: transparent;
-    transition: background ease-out 0.2s;
+    background-color: #fff;
+    transition: all ease 0.5s;
+    z-index: 99;
 }
 #header.active{
     position: fixed;
     background: #fff;
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
 }
 #header .navbar-collapse{
     width: auto;
@@ -127,6 +129,22 @@ html{
 }
 #galeria .button-group button.active{
     color: var(--primary);
+}
+#carouselExampleCaptions .item--1,
+#carouselExampleCaptions .item--2,
+#carouselExampleCaptions .item--3{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#carouselExampleCaptions .item--1{
+    background-image: url('../img/slides/SLD1.jpg');
+}
+#carouselExampleCaptions .item--2{
+    background-image: url('../img/slides/SLD2.jpg');
+}
+#carouselExampleCaptions .item--3{
+    background-image: url('../img/slides/SLD3.jpg');
 }
 #rodape .footer{
 	background-color: var(--primary-dark);
