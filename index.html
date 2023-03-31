@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/magnific-popup.css" />
@@ -26,7 +29,8 @@
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <!--<span class="navbar-toggler-icon"></span>-->
+          <span class="material-symbols-outlined menu-toggle">menu</span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
@@ -55,43 +59,14 @@
   <!-- Fechamento do cabeçalho -->
 
   <!-- Início de Slides-->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active item--1">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Serviço amplo</h5>
-          <p>Instalação completa de redes de proteção no seu imóvel</p>
-        </div>
-      </div>
-      <div class="carousel-item item--2">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Segundo slide</h5>
-          <p>Espaço dedicado à descrição de serviços.</p>
-        </div>
-      </div>
-      <div class="carousel-item item--3">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Terceiro slide</h5>
-          <p>Espaço dedicado à descrição de serviços.</p>
+  <div id="container-home" class="block">
+    <div class="container-background">
+      <div class="container-blur">
+        <div class="logo-bg">
+          <!--<img src="img/global-index/logo-principal.svg" width="200px" alt="">-->
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
   <!-- Fechamento de Slides-->
 
@@ -101,9 +76,9 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8">
-            <div class="section-tittle">
-              <h2>Sobre <span>Nós</span></h2> <br>
-              <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            <div class="section-tittle fade-animated-left">
+              <h2>Sobre <span class="text-gradient">Nós</span></h2> <br>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
                 took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
                 but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
@@ -119,10 +94,10 @@
   <!-- Fechamento SOBRE-->
 
   <!--Abertura SERVIÇOS-->
-  <section class="service section-padding" id="sectionServicos">
+  <section class="fade-animated-right service section-padding" id="sectionServicos">
     <div id="servicos" class="block">
       <div class="container">
-        <h2 class="title text-center">Nossos <span>Serviços</span></h2>
+        <h2 class="title text-center">Nossos <span class="text-gradient">Serviços</span></h2>
         <h4 class="subtitle text-center mb-4">Conheça um pouco mais do nosso trabalho</h4>
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
@@ -162,11 +137,11 @@
   <!--Fechamento SERVIÇOS-->
 
   <!--Abertura GALERIA-->
-  <section class="service section-padding" id="sectionGaleria">
+  <section class="fade-animated-in service section-padding" id="sectionGaleria">
     <div id="galeria" class="block">
       <div class="container">
-        <h2 class="title text-center">Galeria</h2>
-        <h4 class="subtitle text-center mb-4">Confira os serviços realizados pela TM</h4>
+        <h2 class="title text-center"><span class="text-gradient">Galeria</span></h2>
+        <!--<h4 class="subtitle text-center mb-4">Confira os serviços realizados pela TM</h4>-->
         <div class="button-group">
           <button type="button" class="active" data-filter="*">Todos</button>
           <button type="button" data-filter=".apartamento">Apartamento</button>
@@ -182,8 +157,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Residencial</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Residencial</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <!--Abertura de um novo item-->
@@ -193,8 +168,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <!--Abertura de um novo item-->
@@ -204,8 +179,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Janela</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Janela</span>
             </p>
           </div>
           <!--Abertura de um novo item-->
@@ -215,8 +190,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <!--Abertura de um novo item-->
@@ -226,8 +201,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <!--Abertura de um novo item-->
@@ -237,8 +212,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <!--Abertura de um novo item-->
@@ -248,8 +223,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <div class="col-lg-4 col-12 mb-4 element-item apartamento sacada">
@@ -258,8 +233,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <div class="col-lg-4 col-12 mb-4 element-item apartamento sacada">
@@ -268,8 +243,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <div class="col-lg-4 col-12 mb-4 element-item apartamento sacada">
@@ -278,8 +253,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <div class="col-lg-4 col-12 mb-4 element-item residencial sacada">
@@ -288,8 +263,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Residencial</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Residencial</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
           <div class="col-lg-4 col-12 mb-4 element-item apartamento sacada">
@@ -298,8 +273,8 @@
             </a>
             <h5 class="uppercase mb-1">São Paulo</h5>
             <p class="mb-0">
-              <span class="badge bg-light text-dark">Apartamento</span>
-              <span class="badge bg-light text-dark">Sacada</span>
+              <span class="badge">Apartamento</span>
+              <span class="badge">Sacada</span>
             </p>
           </div>
         </div>

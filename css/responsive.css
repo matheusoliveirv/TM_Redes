@@ -11,6 +11,17 @@
     #header .navbar-collapse{
         width: 100%;
     }
+    #header .wpp-button{
+        margin: 0;
+    }
+    #container-home{
+        padding: 0.5rem;
+        align-items: center;
+        justify-content: center;
+    }
+    #container-home .container-blur{
+        width: 80vw;
+    }
 }
 
 @media (max-width: 767.98px){
