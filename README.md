@@ -1,1 +1,1 @@
-Projeto criado utilizando elementos da biblioteca Bootstrap
+Projeto criado utilizando elementos da biblioteca Bootstrap. Em desenvolvimento.
